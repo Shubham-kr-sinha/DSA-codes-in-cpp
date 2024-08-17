@@ -109,9 +109,9 @@ class LinkedList{
             Node* temp = head;
             for(int i = 1; i<=idx-1;i++){
                 temp = temp->next;
-                temp->next = temp->next->next;
-                size--;
             }
+            temp->next = temp->next->next;
+            size--;
         }
     }
 };
